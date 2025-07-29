@@ -29,13 +29,14 @@ export const SearchForm = ({ initialSearchQuery = '', onSearch }) => {
     return (
         <form onSubmit={handleSearch}>
             <input
+                type='text'
                 name="query"
                 value={query}
                 onChange={handleInputChange}
                 onKeyPress={handleKeyPress}
                 placeholder="Enter search query..."
             />
-            <button type="submit">Search</button>
+            <button className='btn-primary' type="submit">Search</button>
         </form>
     );
 };

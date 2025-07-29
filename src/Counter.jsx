@@ -24,8 +24,8 @@ export class Counter extends Component {
             'div',
             null,
             createElement('p', null, this.state.counter),
-            createElement('button', {onClick: this.handleIncrementCounter}, 'Increment'),
-            createElement('button', {onClick: this.handleDecrementCounter}, 'Decrement')
+            createElement('button', {onClick: this.handleIncrementCounter, className: 'btn-primary'}, 'Increment'),
+            createElement('button', {onClick: this.handleDecrementCounter, className: 'btn-secondary'}, 'Decrement')
         )
     }
     

@@ -1,65 +1,63 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --main-bg-color: #232323;
+  --gray-one: #424242;
+  --gray-two: #555555;
+  --main-red: #F65261;
+  background-color: var(--main-bg-color);
+  color: white;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+label {
+  color: var(--main-red);
+  text-transform: uppercase;
+
 }
-a:hover {
-  color: #535bf2;
+
+button {
+  border-radius: 3px;
+  padding: 10px 20px;
+  border: solid 1px;
+  border-color: var(--main-red);
+  text-transform: uppercase;
+  margin: 3px;
+}
+
+.btn-primary {
+  background-color: var(--main-red);
+  color: wheat;
+}
+.btn-secondary {
+  background-color: var(--main-bg-color);
+  color: var(--main-red);
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: var(--gray-one);
+  color: white;
+  border: 1px solid;
+  border-color: var(--gray-one);
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: var(--gray-one);
+  color: white;
+  border: 1px solid;
+  border-color: var(--gray-one);
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  
   min-width: 320px;
   min-height: 100vh;
-}
-
-
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
