@@ -1,9 +1,13 @@
 import { Component, createElement } from 'react';
 
 export class Counter extends Component {
-    state = {
-        counter: 0
+    constructor(props) {
+        super(props)
+        this.state = {
+            counter: props.initialValue || 0
+        }
     }
+    
 
     handleIncrementCounter = () => {
         this.setState({

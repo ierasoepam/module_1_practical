@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      
+      <Counter initialValue={110}/>
       <SearchForm/>
     </>
   )
