@@ -1,7 +1,7 @@
 import './App.css'
-import { Counter } from './Counter'
-import { GenreSelect } from './GenreSelect'
-import { SearchForm } from './SearchForm'
+import { Counter } from './components/Counter'
+import { GenreSelect } from './components/GenreSelect'
+import { SearchForm } from './components/SearchForm'
 
 function App() {
   const genres = ['action', 'comedy', 'terror']
