@@ -1,4 +1,4 @@
-import { Component, createElement } from 'react';
+import React, { Component, createElement } from 'react';
 
 export class Counter extends Component {
     constructor(props) {
@@ -24,18 +24,18 @@ export class Counter extends Component {
       'div',
       null,
       React.createElement(
-        'h2',
+        'p',
         { 'data-cy': 'counter-value' },
-        this.state.value
+        this.state.counter
       ),
       React.createElement(
         'button',
-        { onClick: this.increment, 'data-cy': 'increment-button' },
+        { onClick: this.handleIncrementCounter, 'data-cy': 'increment-button', className: 'btn-primary'},
         'Increment'
       ),
       React.createElement(
         'button',
-        { onClick: this.decrement, 'data-cy': 'decrement-button' },
+        { onClick: this.handleDecrementCounter, 'data-cy': 'decrement-button', className: 'btn-secondary'},
         'Decrement'
       )
     );

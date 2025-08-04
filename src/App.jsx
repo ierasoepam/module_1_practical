@@ -1,8 +1,8 @@
 import './App.css'
-import { Counter } from './components/Counter'
-import { GenreSelect } from './components/GenreSelect'
-import { SearchForm } from './components/SearchForm'
-import { MovieTile } from './components/MovieTile'
+import { Counter } from './components/Counter/Counter'
+import { GenreSelect } from './components/GenreSelect/GenreSelect'
+import { SearchForm } from './components/SearchForm/SearchForm'
+import { MovieTile } from './components/MovieTile/MovieTile'
 function App() {
   const genres = ['action', 'comedy', 'terror']
   const movie = {
