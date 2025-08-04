@@ -6,7 +6,7 @@ export const GenreSelect = ({genres, currentGenreSelection, onSelect}) => {
     const handleGenreChange = (e) => {
         setGenre(e.target.value)
         if (onSelect) {
-            onSelect(genre)
+            onSelect(e.target.value)
         }
     }
     const handleSubmit = () => {

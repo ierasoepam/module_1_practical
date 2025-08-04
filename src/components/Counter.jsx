@@ -20,13 +20,25 @@ export class Counter extends Component {
         })
     }
     render() {
-        return createElement(
-            'div',
-            null,
-            createElement('p', null, this.state.counter),
-            createElement('button', {onClick: this.handleIncrementCounter, className: 'btn-primary'}, 'Increment'),
-            createElement('button', {onClick: this.handleDecrementCounter, className: 'btn-secondary'}, 'Decrement')
-        )
-    }
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'h2',
+        { 'data-cy': 'counter-value' },
+        this.state.value
+      ),
+      React.createElement(
+        'button',
+        { onClick: this.increment, 'data-cy': 'increment-button' },
+        'Increment'
+      ),
+      React.createElement(
+        'button',
+        { onClick: this.decrement, 'data-cy': 'decrement-button' },
+        'Decrement'
+      )
+    );
+  }
     
 }

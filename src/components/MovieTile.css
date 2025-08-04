@@ -1,0 +1,43 @@
+.movie-tile {
+    display: flex;
+    flex-direction: column;
+    max-width: 14em;
+    max-height: 14em;
+}
+
+.movie-tile-image-container > img {
+    width: 100%;
+    height: 100%;
+}
+
+.movie-tile-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.movie-name-genre {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-tile-year {
+    flex: 1;
+    justify-self: flex-end;
+    align-items: flex-end;
+    margin-top: 1em;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.movie-tile-genres {
+    margin: 0px;
+}
+.movie-tile-name {
+    margin: 0px;
+    margin-top: 1em;
+    max-width: 80%;
+}
