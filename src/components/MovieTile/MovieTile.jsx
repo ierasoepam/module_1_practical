@@ -16,8 +16,8 @@ export const MovieTile = ({ movie, onClick }) => {
       </div>
       <div className="movie-tile-info">
         <div className='movie-name-genre'>
-            <h3 className="movie-tile-name">{name}</h3>
-            <p className="movie-tile-genres">{genres.join(', ')}</p>
+            <h3 name='movie-title' className="movie-tile-name">{name}</h3>
+            <p data-testid='genres' className="movie-tile-genres">{genres.join(', ')}</p>
         </div>
         <span className="movie-tile-year">{releaseYear}</span>
 

@@ -3,6 +3,9 @@ import { Counter } from './components/Counter/Counter'
 import { GenreSelect } from './components/GenreSelect/GenreSelect'
 import { SearchForm } from './components/SearchForm/SearchForm'
 import { MovieTile } from './components/MovieTile/MovieTile'
+import { SortControl } from './components/SortControl/SortControl'
+
+
 function App() {
   const genres = ['action', 'comedy', 'terror']
   const movie = {
@@ -13,6 +16,9 @@ function App() {
   }
   return (
     <>
+      <SortControl
+        currentSelection='title'
+      />
       <Counter initialValue={110}/>
       <SearchForm/>
       <GenreSelect
@@ -23,6 +29,7 @@ function App() {
         movie={movie} 
         onClick={() => {}}
       />
+      
     </>
   )
 }

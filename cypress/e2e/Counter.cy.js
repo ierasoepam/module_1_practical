@@ -1,5 +1,5 @@
 import { mount } from 'cypress/react';
-import { Counter } from '../../src/components/Counter';
+import { Counter } from '../../src/components/Counter/Counter';
 
 describe('Counter', () => {
   it('should render with the initial value', () => {
