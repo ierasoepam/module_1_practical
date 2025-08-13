@@ -1,0 +1,47 @@
+.movie-details-container {
+  display: flex;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.movie-poster {
+  flex: 0 0 250px; /* Fixed width for the poster */
+  margin-right: 20px;
+}
+
+.movie-poster img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.movie-info {
+  flex-grow: 1;
+}
+
+.movie-info h2 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.movie-info p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.movie-info strong {
+  color: #333;
+}
+
+.movie-description {
+  font-size: 0.95em;
+  color: #666;
+}
+
