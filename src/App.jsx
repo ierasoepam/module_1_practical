@@ -4,6 +4,8 @@ import { GenreSelect } from './components/GenreSelect/GenreSelect'
 import { SearchForm } from './components/SearchForm/SearchForm'
 import { MovieTile } from './components/MovieTile/MovieTile'
 import { SortControl } from './components/SortControl/SortControl'
+import { Dialog } from './components/Dialog/Dialog'
+import { MovieForm } from './components/MovieForm/MovieForm'
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
   }
   return (
     <>
+      <MovieForm/>
+      <Dialog/>
       <SortControl
         currentSelection='title'
       />
